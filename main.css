@@ -1,0 +1,28 @@
+nav {
+    background-color:cadetblue;
+    padding: 2em;
+}
+
+.nav {
+    float: right;
+    margin-right: 1em;
+ }
+
+ .popCourse {
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 5px;
+    padding: 2em;
+ }
+
+ .copyright {
+    background-color:cadetblue;
+    padding: 1em;
+ }
+
+ #hero {
+     color: white;
+     height:18em;
+     background-image: url("../assets/hero_quiz_600x315.png");
+
+ }

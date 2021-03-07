@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <!-- the head section -->
     <head>
+        <meta charset="utf-8">
         <title>Stay Sharp Academy</title>
         <link rel="stylesheet" type="text/css" href="../main.css">
     </head>
