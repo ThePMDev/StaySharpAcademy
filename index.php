@@ -1,4 +1,6 @@
-<?php include 'view/header.php'; ?>
+<?php include 'view/header.php';
+include_once 'Model/database.php';
+ ?>
 
 <a href="controller_admin/index.php">Admin Interface</a>
 
