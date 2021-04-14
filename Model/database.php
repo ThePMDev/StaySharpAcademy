@@ -7,8 +7,15 @@ $db_name = "mydb";
 
 //connect to server and select database: 
 $conn = new mysqli ($host, $username, $password, $db_name);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+
+if (! $conn)
+    {
+        die('Could not connect to instance: ' . mysqli_error($conn));
+    }
+
+/* if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error); 
+} */
 ?>
+
 
