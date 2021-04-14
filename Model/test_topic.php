@@ -34,7 +34,7 @@ $result = mysqli_query($conn, $strSQL); // this should be the same for all queri
 // the function take two arguments, the $results (required) received from Step 1 - GET RESULTS and the format for how you want those results (optional), .e.g. mysqli_fetch_all(result, resultType)
 // the result type can be associative (MYSQLI_ASSOC), numeric (MYSQLI_NUM) or both (MYSLQI_BOTH)
 // you store the return value in a new variable that you can name whatever is descriptive for your use case
-// IMPORTANT NOTE --> this variable, $productList, is what holds all the data returned and what you'll use to access specific record fields in your display via php echo statments in movie.php line #
+// IMPORTANT NOTE --> this variable, $topic, is what holds all the data returned and what you'll use to access specific record fields in your display via php echo statments in movie.php line #
 $topic = mysqli_fetch_all($result, MYSQLI_ASSOC); // you will rename your variable for each specific query
 
 // Step 3 - FREE RESULT: 
