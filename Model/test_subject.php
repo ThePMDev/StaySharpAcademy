@@ -20,7 +20,7 @@
 
 
 // Get all users via SELECT * from the users table
-$strSQL = "SELECT * FROM subject ORDER BY subject_name ASC";
+$strSQL = "SELECT subjectID, subject_name FROM subject";
 
 // Step 1 - GET RESULTS: 
 // the mysqli_query() function takes two required arguments, the information needed to connect to the database ($connect) and the query string you want to execute ($strSQL)

@@ -3,6 +3,7 @@
         require '../Model/test_subject.php';
         require '../Model/test_course.php';        
         require '../Model/test_topic.php';
+        require '../Model/test_question.php';        
 ?>
 
 <!DOCTYPE html>
@@ -35,6 +36,15 @@
             <!-- present each option with a radio dial -->
             <input type="radio" name="<?php echo $row["topicID"]; ?>" value="<?php echo $row["topicID"]; ?>" id="<?php echo $row["topicID"]; ?>" > <?php echo $row["topic_name"]; ?><br>
             <?php } ?>
+
+            <p>Questions</p>
+        <?php foreach($question as $row) { ?>
+            <p>
+            <?php echo $row["question"]; ?><br>
+            <!-- present each option with a radio dial -->
+            <input type="radio" name="<?php echo $row["questionID"]; ?>" value="<?php echo $row["questionID"]; ?>" id="<?php echo $row["questionID"]; ?>" > <?php echo $row["answer"]; ?><br>
+            <?php } ?>
+            </p>
     </body>
 
     <!-- echo "School ID: ".$row["schoolID"]."  ";
