@@ -11,7 +11,7 @@
     <body>
         <?php
             if ($conn){
-                echo "Question Table Connection Successful (per test_question.php)"."<br>";
+                echo "Question Table Connection Successful (per model/question.php)"."<br>";
             }
             echo $topicID;	
              ?>
