@@ -12,7 +12,7 @@
         <header>
             <nav>
                 <a href="index.php" id="logo">Stay Sharp Academy</a>
-                <a href="view/test_view.php" class="nav">Explore</a>
+                <a href="view/explore.php" class="nav">Explore</a>
                 <a href="#" class="nav">Create Account</a>
                 <a href="#" class="nav">Login</a>
             </nav>

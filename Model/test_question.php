@@ -1,4 +1,5 @@
-<?php require 'database.php';
+<?php   require 'database.php';
+
  ?>
 
 <!DOCTYPE html>
@@ -10,17 +11,24 @@
     <body>
         <?php
             if ($conn){
-                echo "Question Table Connection Successful"."<br>";
-            }	
+                echo "Question Table Connection Successful (per test_question.php)"."<br>";
+            }
+            echo $topicID;	
              ?>
 
     </body>
-
+</html>
 <?php 
-
+// Get parameters from explore page drop down inputs
+$schoolID = $_GET['schoolID'];
+$subjectID = $_GET['subjectID'];
+$courseID = $_GET['courseID'];
+$topicID = $_GET['topicID'];
 
 // Get all users via SELECT * from the users table
-$strSQL = "SELECT questionID, question, answer FROM question";
+$strSQL = " SELECT questionID, question, answer 
+            FROM question 
+            WHERE schoolID = $schoolID AND subjectID = $subjectID AND courseID = $courseID AND topicID = $topicID AND questionID > 0";
 
 // Step 1 - GET RESULTS: 
 // the mysqli_query() function takes two required arguments, the information needed to connect to the database ($connect) and the query string you want to execute ($strSQL)
