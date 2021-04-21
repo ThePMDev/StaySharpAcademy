@@ -19,7 +19,8 @@
     </body>
 </html>
 <?php 
-// Get parameters from explore page drop down inputs
+// Get parameters from explore.php page drop down user inputs
+// the question.php model gets called from the quiz.php page
 $schoolID = $_GET['schoolID'];
 $subjectID = $_GET['subjectID'];
 $courseID = $_GET['courseID'];
