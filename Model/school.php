@@ -10,17 +10,17 @@
     <body>
         <?php
             if ($conn){
-                echo "Topic Table Connection Successful"."<br>";
+                echo "School Table Connection Successful"."<br>";
             }	
              ?>
 
     </body>
-
+</html>
 <?php 
 
 
 // Get all users via SELECT * from the users table
-$strSQL = "SELECT * FROM topic ORDER BY topic_name ASC";
+$strSQL = "SELECT schoolID, school_name FROM school WHERE schoolID > 0 ORDER BY school_name ASC";
 
 // Step 1 - GET RESULTS: 
 // the mysqli_query() function takes two required arguments, the information needed to connect to the database ($connect) and the query string you want to execute ($strSQL)
@@ -34,8 +34,8 @@ $result = mysqli_query($conn, $strSQL); // this should be the same for all queri
 // the function take two arguments, the $results (required) received from Step 1 - GET RESULTS and the format for how you want those results (optional), .e.g. mysqli_fetch_all(result, resultType)
 // the result type can be associative (MYSQLI_ASSOC), numeric (MYSQLI_NUM) or both (MYSLQI_BOTH)
 // you store the return value in a new variable that you can name whatever is descriptive for your use case
-// IMPORTANT NOTE --> this variable, $topic, is what holds all the data returned and what you'll use to access specific record fields in your display via php echo statments in movie.php line #
-$topic = mysqli_fetch_all($result, MYSQLI_ASSOC); // you will rename your variable for each specific query
+// IMPORTANT NOTE --> this variable, $school, is what holds all the data returned and what you'll use to access specific record fields in your display via php echo statments in movie.php line #
+$school = mysqli_fetch_all($result, MYSQLI_ASSOC); // you will rename your variable for each specific query
 
 // Step 3 - FREE RESULT: 
 // the mysqli_free_result() function fetches rows from a result-set, then frees the memory associated with the result

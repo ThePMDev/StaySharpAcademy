@@ -4,7 +4,7 @@
                 <div class="leftside">
                         <h1>Lorem ipsum dolor sit.</h1>
                         <p>Amet, consectetur adipiscing elit. Quisque non magna non lacus mattis.</p>
-                        <a class="btn btn-primary" href="view/explore_view.php" role="button">Explore</a>
+                        <a class="btn btn-primary" href="view/explore.php" role="button">Explore</a>
                 </div>  
             </div>
             <div class="col g-0">

@@ -20,7 +20,7 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="controller_user/explore.php" class="nav-link">Explore</a></li>
+                                <a href="view/explore.php" class="nav-link">Explore</a></li>
                                 <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="login.php" class="nav-link">Create Account</a></li>
