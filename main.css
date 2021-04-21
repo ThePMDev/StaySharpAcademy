@@ -1,12 +1,19 @@
-nav {
-    background-color:cadetblue;
-    padding: 2em;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.nav {
-    float: right;
-    margin-right: 1em;
+ .leftside, .rightside {
+     height:100vh;
+     width: 100%;
  }
+
+ .leftside {
+     background-color: #e6dfdf;
+ }
+
+ .rightside {
+    background-image: url("../assets/hero.jpg");
+}
 
  .popCourse {
     border-style: solid;
@@ -16,13 +23,7 @@ nav {
  }
 
  .copyright {
-    background-color:cadetblue;
+
     padding: 1em;
  }
 
- #hero {
-     color: white;
-     height:18em;
-     background-image: url("../assets/hero_quiz_600x315.png");
-
- }

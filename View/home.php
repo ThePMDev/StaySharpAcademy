@@ -1,7 +1,15 @@
 
-        <div id="hero">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid ipsum nobis quod itaque fugiat sed facilis ratione, officiis pariatur ipsa illum est recusandae corrupti nulla debitis dolores accusamus et?</p>
-        
+        <div class="row g-0">
+            <div class="col g-0">
+                <div class="leftside">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <p>Amet, consectetur adipiscing elit. Quisque non magna non lacus mattis.</p>
+                        <a class="btn btn-primary" href="view/explore_view.php" role="button">Explore</a>
+                </div>  
+            </div>
+            <div class="col g-0">
+                <div class="rightside"></div>
+            </div>
         </div>
         <p>Most Popular Courses</p>
         <table>
