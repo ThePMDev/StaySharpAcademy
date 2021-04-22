@@ -1,4 +1,8 @@
 <?php 
+    // include header
+    include '../view/header.php';
+
+
     $question1 = $_POST['q1'];
     $question2 = $_POST['q2'];
     $question3 = $_POST['q3'];            
