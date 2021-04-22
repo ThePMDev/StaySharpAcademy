@@ -23,10 +23,10 @@
                                 <a href="view/explore.php" class="nav-link">Explore</a></li>
                                 <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="login.php" class="nav-link">Create Account</a></li>
+                                <a href="../controller/login.php" class="nav-link">Create Account</a></li>
                                 <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="login.php" class="nav-link">Log In</a></li>
+                                <a href="../controller/login.php" class="nav-link">Log In</a></li>
                     </div>
                 </div>
             </nav> 
