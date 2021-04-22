@@ -1,4 +1,4 @@
-<?php include 'view/uheader.php';
+<?php include 'view/header.php';
 include_once 'Model/database.php';
  ?>
 

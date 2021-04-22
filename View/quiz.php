@@ -1,6 +1,9 @@
 <?php   // use the questions model to pull the specific questions based on the user's inputs from the explore page
         // the question's model gives this page access to the $question array generated
         require '../model/question.php';
+
+        // include the header
+        include 'header.php';
 ?>
 
 <!DOCTYPE html>

@@ -12,6 +12,22 @@
 
 <!-- the body section -->
     <body>
-    <header>
-        <h1>Welcome To Stay Sharp Academy</h1>
-    </header>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.php">
+                        <img src="../assets/testlogo.png" alt="Stay Sharp" width="250" height="100"></a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="view/explore.php" class="nav-link">Explore</a></li>
+                                <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="view/login.php" class="nav-link">Create Account</a></li>
+                                <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="view/login.php" class="nav-link">Log In</a></li>
+                    </div>
+                </div>
+            </nav> 
+        </header>
