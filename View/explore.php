@@ -1,6 +1,6 @@
 <?php   
         // include header
-        include 'header.php';
+        include 'header_view.php';
         // use each of the models to pull the data needed for the drop down lists
         require '../model/school.php';
         require '../model/subject.php';
