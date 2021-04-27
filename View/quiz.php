@@ -3,7 +3,7 @@
         require '../model/question.php';
 
         // include the header
-        include 'header.php';
+        include 'header_view.php';
 ?>
 
 <!DOCTYPE html>
