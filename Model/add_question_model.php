@@ -3,7 +3,10 @@
         if ($conn){
                 echo "Add Question Model Connection Successful (per model/add_question_model.php)"."<br>";
         }
-             
+
+        // include header
+        include '../view/header_view.php';
+
 // capture user selections from drop down lists
 $schoolID = $_POST['schoolID'];
 $subjectID = $_POST['subjectID'];
