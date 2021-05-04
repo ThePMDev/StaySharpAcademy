@@ -8,12 +8,11 @@
         <title>Test Model</title>
     </head>
     <body>
-        <?php
+       <?php
             if ($conn){
                 echo "Topic Table Connection Successful"."<br>";
             }	
              ?>
-
     </body>
 </html>
 <?php 

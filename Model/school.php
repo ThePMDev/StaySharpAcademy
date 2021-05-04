@@ -8,7 +8,7 @@
         <title>Test Model</title>
     </head>
     <body>
-        <?php
+       <?php
             if ($conn){
                 echo "School Table Connection Successful"."<br>";
             }	

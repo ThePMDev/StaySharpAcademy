@@ -8,11 +8,11 @@
         <title>Test Model</title>
     </head>
     <body>
-        <?php
+       <?php
             if ($conn){
                 echo "Course Table Connection Successful"."<br>";
             }	
-             ?>
+             ?> 
 
     </body>
 </html>

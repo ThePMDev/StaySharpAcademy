@@ -13,7 +13,8 @@
         <title>Stay Sharp --> Quiz</title>
     </head>
     <body>
-        <p>Questions</p>
+        <div class="container pt-3 pb-3">
+        <h1>Questions</h1>
 
         <?php 
             // set the number of questions per quiz
@@ -108,5 +109,6 @@
             <!-- these answers are captured via the name & value parameters as a key / value pair -->
             <input type="submit" value="Submit Quiz">
         </form>
+        </div>
     </body>
 </html>

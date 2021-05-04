@@ -1,6 +1,6 @@
 <?php   
         // include header
-        include 'header_view.php';
+        include 'header.php';
         // use each of the models to pull the data needed for the drop down lists
         require '../model/school.php';
         require '../model/subject.php';
@@ -15,10 +15,12 @@
         <title>Test View</title>
     </head>
     <body>
+        <!-- put form into a container with padding and added classes to select tags to format them - rs -->
+    <div class="container mt-3 mb-3">
         <form action="quiz.php" method="get">
         <!-- the form's action parameter is the path to where it will send the user upon submit -->
-            <p>Schools</p>
-                <select name="schoolID">
+            <h1>Schools</h1>
+                <select class="form-select" name="schoolID">
                     <?php foreach($school as $row) { ?>
                     <!-- data is coming from the school.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -28,8 +30,8 @@
                     <?php } ?>
                 </select>
 
-            <p>Subjects</p>
-                <select name="subjectID">
+            <h1 class="pt-3">Subjects</h1>
+                <select class="form-select" name="subjectID">
                     <?php foreach($subject as $row) { ?>
                     <!-- data is coming from the subject.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -39,8 +41,8 @@
                     <?php } ?>
             </select>
 
-            <p>Courses</p>
-                <select name="courseID">
+            <h1 class="pt-3">Courses</h1>
+                <select class="form-select" name="courseID">
                     <?php foreach($course as $row) { ?>
                     <!-- data is coming from the course.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -50,8 +52,8 @@
                     <?php } ?>
             </select>
 
-            <p>Topics</p>
-                <select name="topicID">
+            <h1 class="pt-3">Topics</h1>
+                <select class="form-select" name="topicID">
                     <?php foreach($topic as $row) { ?>
                     <!-- data is coming from the topic.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -63,7 +65,10 @@
             <label>&nbsp;</label>
             <!-- the type "submit" parameter will send each 'name' and 'value' parameter as a key/value pair -->
             <!-- the value parameter is the text for the submit button -->
-            <input type="submit" value="Generate Quiz">
+            <!-- class calls bootstrap's button formatting - rs -->
+            <input class="btn btn-primary mt-3" type="submit" value="Generate Quiz">
         </form>
+        </div>
     </body>
 </html>
+<?php include 'footer.php'; ?>
