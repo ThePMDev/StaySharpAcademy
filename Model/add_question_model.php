@@ -1,7 +1,7 @@
 <?php   require 'database.php'; 
 
-        if ($conn){
-                echo "Add Question Model Connection Successful (per model/add_question_model.php)"."<br>";
+        if (!$conn){
+                echo "Add Question Model Connection Failure (per model/add_question_model.php)"."<br>";
         }
 
         // include header
