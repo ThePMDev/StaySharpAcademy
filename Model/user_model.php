@@ -1,30 +1,12 @@
-<?php   require 'database.php';
-
+<?php require 'database.php';
+    
     if (!$conn){
-        echo "Question Table Connection Failure (per model/question.php)"."<br>";
-        }
-
-// Get parameters from explore.php page drop down user inputs
-// the question.php model gets called from the quiz.php page
-$schoolID = $_GET['schoolID'];
-$subjectID = $_GET['subjectID'];
-$courseID = $_GET['courseID'];
-$topicID = $_GET['topicID'];
-
-// userID just a proxy for all or mine until we get login solved
-$userID = $_GET['userID'];
+        echo "User Table Connection Failure"."<br>";
+    }	 
 
 
-if ($userID == 0){
-    $strSQL = " SELECT questionID, question, answer 
-                FROM question 
-                WHERE schoolID = $schoolID AND subjectID = $subjectID AND courseID = $courseID AND topicID = $topicID";
-} else {
-    $strSQL = " SELECT questionID, question, answer 
-                FROM question 
-                WHERE schoolID = $schoolID AND subjectID = $subjectID AND courseID = $courseID AND topicID = $topicID AND userID = $userID";
-}
-
+// Get all users via SELECT * from the users table
+$strSQL = "SELECT userID, first_name, last_name FROM user";
 
 // Step 1 - GET RESULTS: 
 // the mysqli_query() function takes two required arguments, the information needed to connect to the database ($connect) and the query string you want to execute ($strSQL)
@@ -38,8 +20,8 @@ $result = mysqli_query($conn, $strSQL); // this should be the same for all queri
 // the function take two arguments, the $results (required) received from Step 1 - GET RESULTS and the format for how you want those results (optional), .e.g. mysqli_fetch_all(result, resultType)
 // the result type can be associative (MYSQLI_ASSOC), numeric (MYSQLI_NUM) or both (MYSLQI_BOTH)
 // you store the return value in a new variable that you can name whatever is descriptive for your use case
-// IMPORTANT NOTE --> this variable, $question, is what holds all the data returned and what you'll use to access specific record fields in your display via php echo statments in movie.php line #
-$question = mysqli_fetch_all($result, MYSQLI_ASSOC); // you will rename your variable for each specific query
+// IMPORTANT NOTE --> this variable, $user, is what holds all the data returned and what you'll use to access specific record fields in your display via php echo statments in movie.php line #
+$user = mysqli_fetch_all($result, MYSQLI_ASSOC); // you will rename your variable for each specific query
 
 // Step 3 - FREE RESULT: 
 // the mysqli_free_result() function fetches rows from a result-set, then frees the memory associated with the result

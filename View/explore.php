@@ -62,6 +62,16 @@
                         <option value="<?php echo $row["topicID"]; ?>"> <?php echo $row["topic_name"]; ?> </option>
                     <?php } ?>
                 </select>
+
+                <h1 class="pt-3">Question Set</h1>
+                <select class="form-select" name="userID">
+                    <!-- a binary choice for either all questions or the user's questions -->
+                    <!-- present each option within a drop down list -->
+                    <!-- NOTE: future version this will be driven by the user's ID when they are logged in -->
+                        <option value="0"> All Questions </option>
+                        <option value="1"> Only My Questions </option>
+                </select>
+
             <label>&nbsp;</label>
             <!-- the type "submit" parameter will send each 'name' and 'value' parameter as a key/value pair -->
             <!-- the value parameter is the text for the submit button -->

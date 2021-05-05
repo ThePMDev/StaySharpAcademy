@@ -1,23 +1,8 @@
 <?php require 'database.php';
- ?>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Test Model</title>
-    </head>
-    <body>
-       <?php
-            if ($conn){
-                echo "Course Table Connection Successful"."<br>";
-            }	
-             ?> 
-
-    </body>
-</html>
-<?php 
-
+    if (!$conn){
+        echo "Course Table Connection Failure"."<br>";
+    }	
 
 // Get all users via SELECT * from the users table
 $strSQL = "SELECT courseID, course_number FROM course";
