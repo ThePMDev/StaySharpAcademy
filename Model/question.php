@@ -18,7 +18,7 @@ $userID = $_GET['userID'];
 if ($userID == 0){
     $strSQL = " SELECT questionID, question, answer 
                 FROM question 
-                WHERE schoolID = $schoolID AND subjectID = $subjectID AND courseID = $courseID AND topicID = $topicID";
+                WHERE schoolID = $schoolID AND subjectID = $subjectID AND courseID = $courseID AND topicID = $topicID AND userID >= 0";
 } else {
     $strSQL = " SELECT questionID, question, answer 
                 FROM question 
