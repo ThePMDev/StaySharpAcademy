@@ -17,7 +17,7 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="explore.php" class="nav-link text-dark">Explore</a></li>
+                                <a href="explore.php" class="nav-link text-dark">Build A Quiz</a></li>
                             <li class="nav-item">
                                 <a href="add_question_view.php" class="nav-link text-dark">Add A Question</a></li>
                             <li class="nav-item">

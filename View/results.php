@@ -1,6 +1,6 @@
 <?php 
     // include header
-    include '../view/header.php';
+    include 'header_view.php';
 
 
     $question1 = $_POST['q1'];
@@ -32,7 +32,7 @@
     <head>
     </head>
     <body>
-
+<div class="container mt-3 mb-3">
 <?php
     $correct = 0;
         echo "1) ".$question1."<br>";
@@ -78,8 +78,10 @@
         $score = ($correct/5)*100;     
         echo "You scored: ".$score."%";
     ?>
-    <form action="../view/explore.php" method="post">
-        <button type="submit" value="explore">Build Another Quiz</button>
-    </form>
+
+        <form action="../view/explore.php" method="post">
+            <button class="btn btn-primary mt-3" type="submit" value="explore">Build Another Quiz</button>
+        </form>
+    </div>
     </body>
 </html>

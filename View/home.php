@@ -9,9 +9,9 @@
                 <p>Sign up for your FREE account and have all your notes ready for review.</p>
                 <p>Then customize your quizzes to reinforce your learning.</p>
                 <p>It is having all of your most important notes ready for review instantly!</p>
-                <p>Click Explore to get started :)</p>
+                <p>Click Build My First Quiz to get started :)</p>
                 <br>
-                <a class="btn btn-primary" href="view/explore.php" role="button">Explore</a>
+                <a class="btn btn-primary" href="view/explore.php" role="button">Build My First Quiz</a>
                 </div>
             </div>
     </div>
