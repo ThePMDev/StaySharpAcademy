@@ -3,7 +3,14 @@
         <h1>Ace your next test.</h1>
             <div class="row">
                 <div class="col-md-4">
-                <p>Amet, consectetur adipiscing elit. Quisque non magna non lacus mattis.</p>
+                <p>Can't recall what you learned early in the semester let alone semesters ago?</p>
+                <p>Stay Sharp enables you to remember all the important items from not only your courses, but also 
+                the collective knowledge from everyone else that has taken that course!</p>
+                <p>Sign up for your FREE account and have all your notes ready for review.</p>
+                <p>Then customize your quizzes to reinforce your learning.</p>
+                <p>It is having all of your most important notes ready for review instantly!</p>
+                <p>Click Explore to get started :)</p>
+                <br>
                 <a class="btn btn-primary" href="view/explore.php" role="button">Explore</a>
                 </div>
             </div>

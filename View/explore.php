@@ -1,6 +1,6 @@
 <?php   
         // include header
-        include 'header.php';
+        include 'header_view.php';
         // use each of the models to pull the data needed for the drop down lists
         require '../model/school.php';
         require '../model/subject.php';
@@ -12,7 +12,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Test View</title>
+        <title>Build A Quiz</title>
     </head>
     <body>
         <!-- put form into a container with padding and added classes to select tags to format them - rs -->
