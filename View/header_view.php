@@ -11,20 +11,20 @@
 <!-- the body section -->
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.php">
-                        <img src="../assets/testlogo.png" alt="Stay Sharp" width="250" height="100"></a>
+                    <a class="navbar-brand" href="../index.php">STAY SHARP</a>
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="explore.php" class="nav-link">Explore</a></li>
-                                <ul class="navbar-nav">
+                                <a href="explore.php" class="nav-link text-dark">Explore</a></li>
                             <li class="nav-item">
-                                <a href="login.php" class="nav-link">Create Account</a></li>
-                                <ul class="navbar-nav">
+                                <a href="add_question_view.php" class="nav-link text-dark">Add A Question</a></li>
                             <li class="nav-item">
-                                <a href="login.php" class="nav-link">Log In</a></li>
+                                <a href="login.php" class="nav-link text-dark">Log In</a></li>
+                            <li class="nav-item">
+                                <a href="login.php" class="nav-link text-dark btn btn-outline-dark">Sign Up</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav> 

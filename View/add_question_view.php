@@ -7,11 +7,12 @@
         require '../model/course.php';        
         require '../model/topic.php';
 ?>
-
-<form action="../model/add_question_model.php" method="post">
+    <!-- put form into a container with padding and added classes to select tags to format them - rs -->
+    <div class="container mt-3 mb-3">
+        <form action="../model/add_question_model.php" method="post">
         <!-- the form's action parameter is the path to where it will send the user upon submit -->
-            <p>Schools</p>
-                <select name="schoolID">
+        <h1>Schools</h1>
+                <select class="form-select" name="schoolID">
                     <?php foreach($school as $row) { ?>
                     <!-- data is coming from the school.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -21,8 +22,8 @@
                     <?php } ?>
                 </select>
 
-            <p>Subjects</p>
-                <select name="subjectID">
+            <h1 class="pt-3">Subjects</h1>
+                <select class="form-select" name="subjectID">
                     <?php foreach($subject as $row) { ?>
                     <!-- data is coming from the subject.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -32,8 +33,8 @@
                     <?php } ?>
             </select>
 
-            <p>Courses</p>
-                <select name="courseID">
+            <h1 class="pt-3">Courses</h1>
+                <select class="form-select" name="courseID">
                     <?php foreach($course as $row) { ?>
                     <!-- data is coming from the course.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -43,8 +44,8 @@
                     <?php } ?>
             </select>
 
-            <p>Topics</p>
-                <select name="topicID">
+            <h1 class="pt-3">Topics</h1>
+                <select class="form-select" name="topicID">
                     <?php foreach($topic as $row) { ?>
                     <!-- data is coming from the topic.php model -->
                     <!-- the model opens the connection to the database, sends the SQL querry string -->
@@ -53,18 +54,18 @@
                         <option value="<?php echo $row["topicID"]; ?>"> <?php echo $row["topic_name"]; ?> </option>
                     <?php } ?>
                 </select>
+                
+                <label for="q"><h1 class="pt-3">Question:</h1></label><br>
+                <textarea id="q" name="question" rows="2" cols="160"></textarea>
                 <br>
-                <label for="q">Question:</label>
-                <textarea id="q" name="question" rows="4" cols="50"></textarea>
-                <br><br>
-                <label for="a">Answer:</label>
-                <textarea id="a" name="answer" rows="4" cols="50"></textarea>
-                <br><br>
+                <label for="a"><h1 class="pt-3">Answer:</h1></label><br>
+                <textarea id="a" name="answer" rows="2" cols="160"></textarea>
+                <br>
 
             <label>&nbsp;</label>
             <!-- the type "submit" parameter will send each 'name' and 'value' parameter as a key/value pair -->
             <!-- the value parameter is the text for the submit button -->
-            <input type="submit" value="Add Question">
+            <input class="btn btn-primary mt-3" type="submit" value="Add Question"><br><br>
         </form>
 
 

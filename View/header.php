@@ -17,8 +17,6 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="view/explore.php" class="nav-link text-dark">Explore</a></li>
-                            <li class="nav-item">
                                 <a href="view/login.php" class="nav-link text-dark">Log In</a></li>
                             <li class="nav-item">
                                 <a href="view/login.php" class="nav-link text-dark btn btn-outline-dark">Sign Up</a></li>
