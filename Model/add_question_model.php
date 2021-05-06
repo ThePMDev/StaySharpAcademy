@@ -14,14 +14,12 @@ $question = $_POST['question'];
 $answer = $_POST['answer'];
 
 // Attempt insert query execution
-$sql = "INSERT INTO question (schoolID, subjectID, courseID, topicID, question, answer) 
-        VALUES ('".$schoolID."','".$subjectID."','".$courseID."','".$topicID."','".$question."','".$answer."')";
+$sql = "INSERT INTO question (userID, schoolID, subjectID, courseID, topicID, question, answer) 
+        VALUES (0,'".$schoolID."','".$subjectID."','".$courseID."','".$topicID."','".$question."','".$answer."')";
 
 ?>
 <h1>
-<?php if (mysqli_query($conn, $sql)) {
-        echo "Question successfully added. Now do it again :)";
-    } else{
+<?php if (!mysqli_query($conn, $sql)) {
         echo "ERROR: Could not execute $sql. " . mysqli_error($conn);
     }
 ?>
@@ -32,9 +30,3 @@ mysqli_close($conn);
 
 ?>
 
-<form action="../view/explore.php" method="post">
-        <button class="btn btn-primary mt-3" type="submit" value="explore">Build Another Quiz</button>
-</form>
-<form action="../view/add_question_view.php" method="post">
-        <button class="btn btn-primary mt-3" type="submit" value="explore">Add Another Question</button>
-</form>

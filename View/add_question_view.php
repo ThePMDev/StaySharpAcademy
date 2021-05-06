@@ -9,7 +9,7 @@
 ?>
     <!-- put form into a container with padding and added classes to select tags to format them - rs -->
     <div class="container mt-3 mb-3">
-        <form action="../model/add_question_model.php" method="post">
+        <form action="question_added.php" method="post">
         <!-- the form's action parameter is the path to where it will send the user upon submit -->
         <h1>Schools</h1>
                 <select class="form-select" name="schoolID">
