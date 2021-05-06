@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="container pt-3 pb-3">
-        <h1>Questions</h1>
+        <h1 class="pt-3">Questions</h1>
 
         <?php 
             // set the number of questions per quiz
@@ -27,15 +27,17 @@
             shuffle($question); ?>
 
             <!-- send the user to the results.php with question, answer, and response values via POST -->
-            <form action="../controller/results.php" method="post">
+            <form action="results.php" method="post">
 
             <?php
                 // this for loop will generate the quiz's questions one at a time along with four possible answers
-                for ($i = 0; $i < $quiz_length; $i++){
-
+                for ($i = 0; $i < $quiz_length; $i++){ ?>
+                    <p class="pt-3">
+                    <?php
                     // show the quiz's question number and each question one at a time
-                    echo ($i+1) . ")  ". $question[$i]['question'];
-                
+                    echo ($i+1) . ")  ". $question[$i]['question']; ?>
+                    </p>
+                    <?php
                     // this array will hold the one correct and three incorrect answers for the radio dials
                     // this array is inside the for loop as it needs to be emptied every time through to get
                     // the next question's correct answer and three new incorrect answers 
@@ -107,7 +109,7 @@
 
             <!-- Note, the user's selected answers are remitted via POST using the type submit button -->
             <!-- these answers are captured via the name & value parameters as a key / value pair -->
-            <input type="submit" value="Submit Quiz">
+            <input class="btn btn-primary mt-3" type="submit" value="Submit Quiz">
         </form>
         </div>
     </body>
