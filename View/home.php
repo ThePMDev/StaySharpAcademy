@@ -11,13 +11,18 @@
     </div>
 </section>
 
-<!--
-<div class="container-fluid">
-<div class="featurecards row px-3 mt-3 mb-3">
-<h2>How does Stay Sharp work?</h2>
-<p class="mt-1 mb-1">Stay Sharp creates quizzes to help you study. Whether you're prepping for an exam, or just want to refresh your knowledge from courses past, we have the features that help you succeed.</p>
-<div class="col-sm-4">
-    <div class="card">
+<!-- section with cards -->
+<section id="featurecards">
+  <div class="container-fluid mb-1">
+    <div class="row mt-5 mb-5">
+      <div class="col-md-12">
+    <h2 class="text-center">How does Stay Sharp work?</h2>
+      <p class="text-center">Stay Sharp creates quizzes to help you study. Whether you're prepping for an exam, or just want to refresh your knowledge from courses past, we have the features that help you succeed.</p>
+</div>
+</div>
+  <div class="row mt-5 mb-1">
+      <div class="col-sm-4">
+    <div class="card text-center border-white mb-1">
       <div class="card-body">
         <p><i class="fas fa-users fa-2x"></i></p>
         <h5 class="card-title">By Students, For Students</h5>
@@ -26,7 +31,7 @@
     </div>
   </div>
   <div class="col-sm-4">
-    <div class="card">
+    <div class="card text-center border-white mb-1">
       <div class="card-body">
         <p><i class="fas fa-question fa-2x"></i></p>
         <h5 class="card-title">Customize Your Content.</h5>
@@ -35,7 +40,7 @@
     </div>
   </div>
   <div class="col-sm-4">
-    <div class="card">
+    <div class="card text-center border-white mb-1">
       <div class="card-body">
         <p><i class="fas fa-mobile-alt fa-2x"></i></p>
         <h5 class="card-title">Access Anywhere, Anytime</h5>
@@ -45,11 +50,12 @@
   </div>
 </div>
 </div>
+</section>
 
-
+<!-- 
 <div class="container-fluid">
     <div class="socialproofcarousel row justify-content-center">
-        <div class="col-md-6">
+        <div class="leftside col-md-6">
             <h2>Our users love us!</h2>
             <p>See what they have to say about us.</p>
         </div>
@@ -57,7 +63,7 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/pic1.jpeg" class="d-block w-100" alt="pic1">
+      <img src="../assets/pic1.jpg" class="d-block w-100" alt="pic1">
     </div>
     <div class="carousel-item">
       <img src="../assets/pic2.jpeg" class="d-block w-100" alt="pic2">
@@ -69,18 +75,18 @@
 </div>
 </div>
 </div>
-<div>
+<div> -->
 
 
 
 <div class="container-fluid">
-    <div class="calltoaction row">
-        <div class="col-md-9">
+    <div class="calltoaction row mb-5 mt-1 pt-5 pb-5">
+        <div class="col-md-9 text-center">
             <h2 class="mx-auto px-auto">Create your account today</h2>
             <p class="mx-auto px-auto">Sign up now to get started. It's 100% free!</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2 d-flex align-items-center">
             <a class="btn btn-primary btn-lg" href="view/login.php" role="button">Create Account</a>
         </div>
     </div>
-</div> -->
+</div> 

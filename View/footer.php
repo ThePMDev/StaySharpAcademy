@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-3 mx-auto mt-3">
                 <h5 class="text-uppercase">Stay Sharp Academy</h5>
-                <p>Here is some text describing our company and what it is about. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida dignissim lacus ut tempor. </p>
+                <p>Stay Sharp Academy is a team of developers committed to providing extraordinary educational tools, created by students, for students.</p>
             </div>
             <div class="col-md-2 mx-auto mt-3">
                 <h5 class="text-uppercase">Quick Links</h5>
