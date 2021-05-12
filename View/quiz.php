@@ -32,7 +32,7 @@
             <?php
                 // this for loop will generate the quiz's questions one at a time along with four possible answers
                 for ($i = 0; $i < $quiz_length; $i++){ ?>
-                    <p class="pt-3">
+                    <p>
                     <?php
                     // show the quiz's question number and each question one at a time
                     echo ($i+1) . ")  ". $question[$i]['question']; ?>
