@@ -37,21 +37,22 @@ h1 {
     font-size: 20px;
 }
 
-.socialproofcarousel {
-    height: 100vh;
-}
-
 .card-body i {
     color: #03658C;
 }
 
-.featurecards {
+#featurecards {
     height: 50vh;
 }
 
+#featurecards h2 {
+    color: #03658C;
+}
+
+
 .calltoaction {
+    height: 30vh;
     background-color: #bbdef0;
-    height: 50vh;
 }
 
 .calltoaction h2 {
