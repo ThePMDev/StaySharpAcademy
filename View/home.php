@@ -4,7 +4,10 @@
         <h1>Ace your next test</h1>
             <div class="row">
                 <div class="col-md-4">
-                <p>Stay Sharp can help you take your grades to the next level.</p>
+                <p>Can't recall what you learned early in the semester let alone semesters ago?</p>
+                <p>Knowledge drives success and Stay Sharp takes your grades to the next level.</p>
+                <p>Sign up for your FREE account and have all your notes ready for review.</p>
+                <p>Click Build My First Quiz to get started now !</p>
                 <a class="btn btn-primary" href="view/explore.php" role="button">Build My First Quiz</a>
                 </div>
             </div>
