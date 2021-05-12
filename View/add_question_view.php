@@ -55,11 +55,11 @@
                     <?php } ?>
                 </select>
                 
-                <label for="q"><h1 class="pt-3">Question:</h1></label><br>
-                <textarea id="q" name="question" rows="2" cols="160"></textarea>
+                <label for="q"><h1 class="form-label pt-3">Question:</h1></label><br>
+                <textarea class="form-control" id="q" name="question" rows="2" cols="160"></textarea>
                 <br>
-                <label for="a"><h1 class="pt-3">Answer:</h1></label><br>
-                <textarea id="a" name="answer" rows="2" cols="160"></textarea>
+                <label for="a"><h1 class="form-label">Answer:</h1></label><br>
+                <textarea class="form-control" id="a" name="answer" rows="2" cols="160"></textarea>
                 <br>
 
             <label>&nbsp;</label>
